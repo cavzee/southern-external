@@ -810,6 +810,37 @@ em {
 
   .menu-button {
     display: block;
+    position: relative;
+    z-index: 20;
+  }
+
+  .desktop-nav.mobile-open {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    flex-direction: column;
+    gap: 0;
+    padding: 18px 24px 24px;
+    background: var(--dark);
+    border-top: 1px solid rgba(255,255,255,.08);
+    box-shadow: 0 18px 35px rgba(0,0,0,.22);
+  }
+
+  .desktop-nav.mobile-open a {
+    display: block;
+    padding: 15px 0;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+
+  .desktop-nav.mobile-open .nav-button {
+    margin-top: 10px;
+    padding: 13px 17px;
+    text-align: center;
+    border-bottom: 0;
   }
 
   .hero-grid,
