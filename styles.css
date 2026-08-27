@@ -704,9 +704,8 @@ em {
   overflow: visible;
 }
 
-.contact h2 em {
-  display: inline;
-  white-space: normal;
+.contact h2 span {
+  display: block;
 }
 
 .contact-copy > p {
