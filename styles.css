@@ -480,3 +480,114 @@ a {
   }
 }
 
+
+/* Southern External — engraved S/E compass */
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 420px;
+  align-items: center;
+  gap: 70px;
+}
+
+.hero-compass {
+  position: relative;
+  width: min(420px, 100%);
+  justify-self: center;
+  opacity: 0.92;
+}
+
+.hero-compass::before {
+  content: "";
+  position: absolute;
+  inset: 12%;
+  border-radius: 50%;
+  background:
+    repeating-radial-gradient(
+      circle at center,
+      transparent 0,
+      transparent 24px,
+      rgba(255,255,255,0.025) 25px,
+      transparent 26px
+    );
+  pointer-events: none;
+}
+
+.hero-compass svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.compass-ring,
+.compass-ticks path,
+.compass-rose path,
+.compass-detail path {
+  fill: none;
+  stroke: currentColor;
+  vector-effect: non-scaling-stroke;
+}
+
+.compass-ring {
+  color: rgba(255,255,255,0.25);
+  stroke-width: 1;
+}
+
+.compass-ring.middle {
+  color: rgba(255,255,255,0.16);
+}
+
+.compass-ring.inner {
+  color: rgba(255,255,255,0.11);
+}
+
+.compass-ticks {
+  color: rgba(255,255,255,0.32);
+  stroke-width: 2;
+}
+
+.compass-rose {
+  color: #d97832;
+  stroke-width: 2;
+}
+
+.compass-rose path:first-child {
+  fill: rgba(217,120,50,0.025);
+}
+
+.compass-detail {
+  color: rgba(255,255,255,0.11);
+  stroke-width: 1;
+}
+
+.compass-centre {
+  fill: #d97832;
+}
+
+.compass-letter {
+  fill: #d97832;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 38px;
+  font-weight: 700;
+  text-anchor: middle;
+}
+
+.compass-e {
+  dominant-baseline: middle;
+}
+
+.compass-s {
+  dominant-baseline: auto;
+}
+
+@media (max-width: 850px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .hero-compass {
+    width: min(340px, 80vw);
+  }
+}
+
