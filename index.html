@@ -4,369 +4,622 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="Southern External provides property maintenance, repairs and improvements across the South East."
-  >
-
   <title>Southern External | Property Maintenance & Exterior Solutions</title>
+
+  <meta name="description" content="Southern External provides practical property maintenance and exterior solutions across the South East of England. Fencing, patios, masonry, drainage, timber structures and light property maintenance.">
+
+  <meta name="theme-color" content="#101411">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#" class="logo">SOUTHERN EXTERNAL</a>
+<header class="site-header">
+  <div class="container nav">
 
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#services">Services</a>
-        <a href="#how-we-work">How We Work</a>
-        <a href="#work">Our Work</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <a href="#" class="brand" aria-label="Southern External home">
+      <span class="brand-mark">SE</span>
+      <span>
+        <strong>SOUTHERN</strong>
+        <small>EXTERNAL</small>
+      </span>
+    </a>
 
-  <main>
+    <nav class="desktop-nav">
+      <a href="#services">Services</a>
+      <a href="#approach">Our approach</a>
+      <a href="#process">How it works</a>
+      <a href="#contact" class="nav-button">Request a quote</a>
+    </nav>
 
-    <section class="hero">
-      <div class="container hero-layout">
+    <button class="menu-button" aria-label="Open navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-        <div class="hero-content">
-          <p class="eyebrow">PROPERTY MAINTENANCE & EXTERIOR SOLUTIONS</p>
+  </div>
+</header>
 
-          <h1>Practical work. Properly finished.</h1>
+<main>
 
-          <p class="hero-text">
-            Reliable property maintenance, repairs and improvements for
-            homeowners, landlords, property managers and businesses across
-            the South East.
-          </p>
+<!-- HERO -->
 
-          <div class="hero-actions">
-            <a href="#contact" class="button button-primary">Discuss a Job</a>
-            <a href="#services" class="button button-secondary">Our Services</a>
-          </div>
+<section class="hero">
+
+  <div class="hero-grid container">
+
+    <div class="hero-copy">
+
+      <div class="eyebrow">
+        PROPERTY MAINTENANCE & EXTERIOR SOLUTIONS
+      </div>
+
+      <h1>
+        Practical work.
+        <span>Properly finished.</span>
+      </h1>
+
+      <p class="hero-intro">
+        Reliable property maintenance and exterior improvement work for
+        homeowners, landlords, property managers and facilities teams
+        across the South East.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="button button-primary">
+          Request a quote
+          <span>↗</span>
+        </a>
+
+        <a href="#services" class="button button-outline">
+          Explore services
+        </a>
+      </div>
+
+      <div class="trust-row">
+        <div>
+          <strong>EXTERIOR</strong>
+          <span>Our core focus</span>
         </div>
 
-        <div class="hero-compass" aria-label="Southern and Eastern compass">
-          <svg viewBox="0 0 500 500" role="img" aria-hidden="true">
+        <div>
+          <strong>GROUND LEVEL</strong>
+          <span>Practical solutions</span>
+        </div>
 
-            <circle class="compass-ring outer" cx="250" cy="250" r="220"/>
-            <circle class="compass-ring middle" cx="250" cy="250" r="190"/>
-            <circle class="compass-ring inner" cx="250" cy="250" r="150"/>
+        <div>
+          <strong>SOUTH EAST</strong>
+          <span>Local service</span>
+        </div>
+      </div>
 
-            <g class="compass-ticks">
-              <path d="M250 30 L250 55"/>
-              <path d="M250 445 L250 470"/>
-              <path d="M30 250 L55 250"/>
-              <path d="M445 250 L470 250"/>
+    </div>
 
-              <path d="M94 94 L112 112"/>
-              <path d="M388 388 L406 406"/>
-              <path d="M406 94 L388 112"/>
-              <path d="M112 388 L94 406"/>
-            </g>
+    <div class="hero-brand">
 
-            <g class="compass-rose">
-              <path d="M250 62 L274 226 L438 250 L274 274 L250 438 L226 274 L62 250 L226 226 Z"/>
-              <path d="M250 105 L260 240 L395 250 L260 260 L250 395 L240 260 L105 250 L240 240 Z"/>
-            </g>
+      <div class="compass-wrap">
 
-            <g class="compass-detail">
-              <path d="M250 82 L250 418"/>
-              <path d="M82 250 L418 250"/>
-              <path d="M132 132 L368 368"/>
-              <path d="M368 132 L132 368"/>
-            </g>
+        <svg class="compass" viewBox="0 0 600 600" aria-label="Southern External compass">
 
-            <circle class="compass-centre" cx="250" cy="250" r="10"/>
+          <circle class="compass-line faint" cx="300" cy="300" r="260"/>
+          <circle class="compass-line" cx="300" cy="300" r="238"/>
+          <circle class="compass-line faint" cx="300" cy="300" r="205"/>
 
-            <text class="compass-letter compass-e" x="438" y="235">E</text>
-            <text class="compass-letter compass-s" x="250" y="470">S</text>
+          <!-- engraved ticks -->
 
-          </svg>
+          <g class="ticks">
+            <path d="M300 40 L300 68"/>
+            <path d="M300 532 L300 560"/>
+            <path d="M40 300 L68 300"/>
+            <path d="M532 300 L560 300"/>
+
+            <path d="M116 116 L136 136"/>
+            <path d="M464 464 L484 484"/>
+            <path d="M484 116 L464 136"/>
+            <path d="M136 464 L116 484"/>
+
+            <path d="M300 82 L300 96"/>
+            <path d="M300 504 L300 518"/>
+            <path d="M82 300 L96 300"/>
+            <path d="M504 300 L518 300"/>
+          </g>
+
+          <!-- traditional compass rose -->
+
+          <g class="rose">
+
+            <path class="rose-main"
+              d="M300 70
+                 L326 274
+                 L530 300
+                 L326 326
+                 L300 530
+                 L274 326
+                 L70 300
+                 L274 274 Z"/>
+
+            <path class="rose-inner"
+              d="M300 118
+                 L313 287
+                 L482 300
+                 L313 313
+                 L300 482
+                 L287 313
+                 L118 300
+                 L287 287 Z"/>
+
+            <path class="rose-cross"
+              d="M300 92 L300 508
+                 M92 300 L508 300
+                 M153 153 L447 447
+                 M447 153 L153 447"/>
+
+          </g>
+
+          <circle class="compass-centre" cx="300" cy="300" r="11"/>
+          <circle class="compass-centre-small" cx="300" cy="300" r="4"/>
+
+          <!-- only S and E -->
+
+          <text class="direction direction-s"
+                x="300"
+                y="575">S</text>
+
+          <text class="direction direction-e"
+                x="575"
+                y="311">E</text>
+
+        </svg>
+
+        <div class="compass-caption">
+          <span>EST.</span>
+          <span>PROPERTY MAINTENANCE</span>
         </div>
 
       </div>
-    </section>
 
-    <section id="services" class="section services-section">
-  <div class="container">
-
-    <div class="section-heading">
-      <p class="eyebrow">OUR SERVICES</p>
-      <h2>Property maintenance & exterior solutions.</h2>
-      <p>
-        Practical, ground-level maintenance and improvement work for
-        homeowners, landlords, property managers and businesses.
-      </p>
     </div>
 
-    <div class="services-grid">
+  </div>
+
+  <div class="hero-bottom container">
+    <span>Southern External</span>
+    <span>Property Maintenance & Exterior Solutions</span>
+    <span>South East England</span>
+  </div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="intro" id="approach">
+
+  <div class="container intro-grid">
+
+    <div>
+      <div class="eyebrow">THE SOUTHERN EXTERNAL APPROACH</div>
+
+      <h2>
+        The jobs that keep a property
+        <em>looking right.</em>
+      </h2>
+    </div>
+
+    <div class="intro-copy">
+
+      <p>
+        Southern External provides practical maintenance and improvement
+        work without the complication of a large building contractor.
+      </p>
+
+      <p>
+        Our focus is the outside of the property — the boundaries,
+        surfaces, brickwork, drainage, timber and everyday details that
+        need maintaining to keep a property functional and presentable.
+      </p>
+
+      <a href="#contact" class="text-link">
+        Talk to us about a job <span>→</span>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <div>
+        <div class="eyebrow">WHAT WE DO</div>
+        <h2>Exterior maintenance,<br><em>without the fuss.</em></h2>
+      </div>
+
+      <p>
+        A focused range of practical services for homes, rental properties,
+        managed properties and facilities teams.
+      </p>
+
+    </div>
+
+
+    <div class="service-grid">
 
       <article class="service-card">
-        <span class="service-number">01</span>
-        <h3>Boundary & Fencing Repairs</h3>
-        <p>
-          Repair and replacement of storm-damaged fencing, timber and
-          concrete posts, gates and associated fittings.
-        </p>
-        <ul>
-          <li>Storm-damaged fence panels & posts</li>
-          <li>Concrete repair spurs for timber posts</li>
-          <li>Garden gate fitting & rehanging</li>
-          <li>Latch and lock adjustments</li>
-        </ul>
-        <div class="service-highlight">
-          <strong>Built to last</strong>
-          <span>Ground-level reinforcement and durable repairs.</span>
+
+        <div class="service-top">
+          <span>01</span>
+          <span>BOUNDARIES</span>
         </div>
+
+        <div class="service-icon">╲╱</div>
+
+        <h3>Boundary & Fencing Repairs</h3>
+
+        <p>
+          Repair and replacement of damaged fence panels, timber and
+          concrete posts, with reinforcement and gate repairs where required.
+        </p>
+
+        <ul>
+          <li>Storm-damaged fencing</li>
+          <li>Concrete repair spurs</li>
+          <li>Gate fitting & adjustment</li>
+        </ul>
+
       </article>
 
-      <article class="service-card">
-        <span class="service-number">02</span>
+
+      <article class="service-card featured">
+
+        <div class="service-top">
+          <span>02</span>
+          <span>SURFACES</span>
+        </div>
+
+        <div class="service-icon">▦</div>
+
         <h3>Hard Surface & Patio Restoration</h3>
+
         <p>
-          Deep cleaning and restoration for driveways, patios and garden
-          paths, including joint renewal and treatment of organic growth.
+          Deep cleaning and restoration of driveways, patios and pathways,
+          including moss treatment, re-sanding and joint renewal.
         </p>
+
         <ul>
           <li>Rotary pressure washing</li>
           <li>Moss, lichen & algae treatment</li>
-          <li>Kiln-dried sand re-jointing</li>
-          <li>Patio repointing & brush-in jointing</li>
+          <li>Re-sanding & repointing</li>
         </ul>
-        <div class="service-highlight">
-          <strong>Deep clean</strong>
-          <span>Restore tired surfaces and renew worn joints.</span>
-        </div>
+
       </article>
 
+
       <article class="service-card">
-        <span class="service-number">03</span>
+
+        <div class="service-top">
+          <span>03</span>
+          <span>MASONRY</span>
+        </div>
+
+        <div class="service-icon">▤</div>
+
         <h3>Masonry & Garden Wall Maintenance</h3>
+
         <p>
-          Low-level brickwork and masonry repairs for garden walls,
-          boundary structures and small outdoor bases.
+          Low-level brickwork repairs, repointing, rebuilding damaged garden
+          wall features and neat concrete bases.
         </p>
+
         <ul>
-          <li>Garden wall repointing</li>
           <li>Brickwork repairs</li>
-          <li>Damaged gate pier rebuilding</li>
-          <li>Small concrete slab & equipment bases</li>
+          <li>Garden wall repointing</li>
+          <li>Small concrete bases</li>
         </ul>
-        <div class="service-highlight">
-          <strong>Neat finish</strong>
-          <span>Careful brick and mortar matching wherever practical.</span>
-        </div>
+
       </article>
+
 
       <article class="service-card">
-        <span class="service-number">04</span>
-        <h3>Surface Water & Drainage Fittings</h3>
-        <p>
-          Ground-level solutions for managing surface water around
-          driveways, patios, gardens and exterior walls.
-        </p>
-        <ul>
-          <li>Linear ACO channel drain installation</li>
-          <li>Driveway & patio edge drainage</li>
-          <li>Rainwater diverters to water butts</li>
-          <li>Shallow gulley cleaning</li>
-          <li>Exterior brass bib-tap replacement</li>
-        </ul>
-        <div class="service-highlight">
-          <strong>Practical solutions</strong>
-          <span>Reduce pooling and make better use of rainwater.</span>
+
+        <div class="service-top">
+          <span>04</span>
+          <span>WATER</span>
         </div>
+
+        <div class="service-icon">⌁</div>
+
+        <h3>Surface Water & Drainage</h3>
+
+        <p>
+          Ground-level drainage fittings designed to reduce water pooling
+          and improve rainwater management around the property.
+        </p>
+
+        <ul>
+          <li>Linear channel drains</li>
+          <li>Rainwater diverters</li>
+          <li>Gulley cleaning & outside taps</li>
+        </ul>
+
       </article>
+
 
       <article class="service-card">
-        <span class="service-number">05</span>
-        <h3>Outdoor Timber Structures & Grounds Upgrades</h3>
-        <p>
-          Practical timber and garden improvements designed for everyday
-          outdoor use and long-term durability.
-        </p>
-        <ul>
-          <li>Treated timber sleeper raised beds</li>
-          <li>Modular garden planters</li>
-          <li>Garden step repairs</li>
-          <li>Garden shed roof re-felting</li>
-        </ul>
-        <div class="service-highlight">
-          <strong>Made for outdoors</strong>
-          <span>Pressure-treated timber and weather-resistant finishes.</span>
+
+        <div class="service-top">
+          <span>05</span>
+          <span>GROUNDS</span>
         </div>
+
+        <div class="service-icon">⌂</div>
+
+        <h3>Outdoor Timber & Grounds</h3>
+
+        <p>
+          Practical timber and garden upgrades built for everyday outdoor
+          use and the British weather.
+        </p>
+
+        <ul>
+          <li>Sleeper raised beds</li>
+          <li>Garden planters</li>
+          <li>Step repairs & shed roofs</li>
+        </ul>
+
       </article>
 
-      <article class="service-card service-card-secondary">
-        <span class="service-number">06</span>
-        <div class="service-label">SECONDARY / ON REQUEST</div>
+
+      <article class="service-card secondary">
+
+        <div class="service-top">
+          <span>06</span>
+          <span>SECONDARY</span>
+        </div>
+
+        <div class="service-icon">＋</div>
+
         <h3>Light Property Maintenance</h3>
+
         <p>
-          A selection of straightforward internal and external fixture
-          maintenance for smaller property repairs and improvements.
+          Selected internal and external fixture maintenance for smaller,
+          straightforward home repairs.
         </p>
+
         <ul>
-          <li>Basin & kitchen mixer tap replacements</li>
-          <li>Bar shower valve swaps</li>
-          <li>Bath & shower silicone renewal</li>
-          <li>Internal door planing & latch adjustments</li>
+          <li>Mixer tap replacements</li>
+          <li>Shower valve swaps</li>
+          <li>Silicone & door adjustments</li>
         </ul>
-        <div class="service-highlight">
-          <strong>Tidy, non-invasive repairs</strong>
-          <span>Like-for-like fixture replacements and adjustments.</span>
-        </div>
+
       </article>
 
     </div>
+
   </div>
+
 </section>
 
-    <section id="how-we-work" class="section section-dark">
-      <div class="container">
 
-        <div class="section-heading">
-          <p class="eyebrow">HOW WE WORK</p>
+<!-- POSITIONING -->
 
-          <h2>Simple, practical and straightforward.</h2>
-        </div>
+<section class="positioning">
 
-        <div class="process-grid">
+  <div class="container positioning-grid">
 
-          <div class="process-step">
-            <span>01</span>
+    <div class="positioning-number">SE</div>
 
-            <h3>Tell us what you need</h3>
+    <div>
+      <div class="eyebrow">BUILT AROUND PRACTICAL WORK</div>
 
-            <p>
-              Send the details, photographs or arrange a visit so we can
-              understand the work required.
-            </p>
-          </div>
+      <h2>
+        Small enough to care.
+        <br>
+        Capable enough to deliver.
+      </h2>
 
-          <div class="process-step">
-            <span>02</span>
+      <p>
+        From a damaged garden fence to a patio that needs bringing back
+        into shape, Southern External is built around the practical jobs
+        that don't always fit neatly into a larger contractor's schedule.
+      </p>
 
-            <h3>Assess the work</h3>
-
-            <p>
-              We look at the job, identify what is required and agree
-              the scope before work begins.
-            </p>
-          </div>
-
-          <div class="process-step">
-            <span>03</span>
-
-            <h3>Carry out the work</h3>
-
-            <p>
-              We arrive with the appropriate tools and complete the
-              agreed work carefully and professionally.
-            </p>
-          </div>
-
-          <div class="process-step">
-            <span>04</span>
-
-            <h3>Leave it properly finished</h3>
-
-            <p>
-              We tidy the work area and provide photographs or an update
-              where appropriate.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="work" class="section">
-      <div class="container">
-
-        <div class="section-heading">
-          <p class="eyebrow">OUR WORK</p>
-
-          <h2>Practical work. Properly finished.</h2>
-
-          <p>
-            A selection of completed projects and improvements will be
-            shown here.
-          </p>
-        </div>
-
-        <div class="work-placeholder">
-          <p>Project photography coming soon.</p>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section section-accent">
-      <div class="container fm-section">
-
-        <div>
-          <p class="eyebrow">PROPERTY PROFESSIONALS</p>
-
-          <h2>A reliable extra pair of hands.</h2>
-        </div>
-
-        <div>
-          <p>
-            Southern External works with landlords, property managers,
-            letting agents, businesses and facilities management companies
-            that need reliable maintenance support.
-          </p>
-
-          <p>
-            Our main focus is external property maintenance and
-            improvements, while suitable internal repairs and general
-            maintenance can also be undertaken.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container contact-section">
-
-        <div class="section-heading">
-          <p class="eyebrow">GET IN TOUCH</p>
-
-          <h2>Have a property that needs attention?</h2>
-
-          <p>
-            Tell us what needs doing and we'll let you know how we can
-            help.
-          </p>
-        </div>
-
-        <a
-          href="mailto:hello@southernexternal.co.uk"
-          class="button button-primary"
-        >
-          hello@southernexternal.co.uk
-        </a>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span>SOUTHERN EXTERNAL</span>
-      <span>Property Maintenance & Exterior Solutions</span>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
+  </div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="process" id="process">
+
+  <div class="container">
+
+    <div class="section-header process-header">
+
+      <div>
+        <div class="eyebrow">HOW IT WORKS</div>
+        <h2>A straightforward<br><em>way to get it done.</em></h2>
+      </div>
+
+      <p>
+        Clear communication, a defined scope and no surprises about what
+        we're there to do.
+      </p>
+
+    </div>
+
+
+    <div class="process-grid">
+
+      <div class="process-step">
+        <span>01</span>
+        <h3>Tell us what needs doing</h3>
+        <p>Send the details, photographs or arrange a visit.</p>
+      </div>
+
+      <div class="process-step">
+        <span>02</span>
+        <h3>We assess the work</h3>
+        <p>We'll establish what is required and identify any practical considerations.</p>
+      </div>
+
+      <div class="process-step">
+        <span>03</span>
+        <h3>Receive your quote</h3>
+        <p>A clear scope of work and price before anything starts.</p>
+      </div>
+
+      <div class="process-step">
+        <span>04</span>
+        <h3>We get the job done</h3>
+        <p>Work is completed to the agreed scope with a tidy finish.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SERVICE AREA -->
+
+<section class="area">
+
+  <div class="container area-grid">
+
+    <div>
+      <div class="eyebrow">WHERE WE WORK</div>
+
+      <h2>
+        Serving the
+        <em>South East.</em>
+      </h2>
+    </div>
+
+    <div>
+      <p>
+        Southern External provides property maintenance and exterior
+        solutions across the South East of England.
+      </p>
+
+      <p class="area-note">
+        Specific availability depends on the location and nature of the work.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+  <div class="container contact-box">
+
+    <div class="contact-copy">
+
+      <div class="eyebrow">START A CONVERSATION</div>
+
+      <h2>
+        Got a job that needs
+        <em>doing?</em>
+      </h2>
+
+      <p>
+        Tell us what you need, where the property is and, if useful,
+        attach a few photographs.
+      </p>
+
+    </div>
+
+    <div class="contact-action">
+
+      <a href="mailto:southernexternal@gmail.com"
+         class="button button-light">
+        Email Southern External
+        <span>↗</span>
+      </a>
+
+      <a href="mailto:southernexternal@gmail.com"
+         class="contact-email">
+        southernexternal@gmail.com
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+</main>
+
+<footer class="footer">
+
+  <div class="container footer-main">
+
+    <div class="footer-brand">
+
+      <div class="brand">
+        <span class="brand-mark">SE</span>
+        <span>
+          <strong>SOUTHERN</strong>
+          <small>EXTERNAL</small>
+        </span>
+      </div>
+
+      <p>
+        Property Maintenance & Exterior Solutions
+      </p>
+
+    </div>
+
+    <div class="footer-links">
+
+      <a href="#services">Services</a>
+      <a href="#approach">Our approach</a>
+      <a href="#process">How it works</a>
+      <a href="#contact">Contact</a>
+
+    </div>
+
+  </div>
+
+  <div class="container footer-bottom">
+
+    <span>© 2026 Southern External</span>
+
+    <span>South East England</span>
+
+    <span>Property Maintenance & Exterior Solutions</span>
+
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
