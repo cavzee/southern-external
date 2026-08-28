@@ -1003,3 +1003,71 @@ em {
     flex-wrap: wrap;
   }
 }
+
+/* AREAS WE COVER */
+
+.coverage {
+  padding: 110px 0;
+  background: var(--dark);
+}
+
+.coverage-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 70px;
+  align-items: start;
+}
+
+.coverage h2 {
+  margin-top: 17px;
+  max-width: 560px;
+  font-size: clamp(2.6rem, 4.5vw, 4.5rem);
+  line-height: 1.02;
+  letter-spacing: -.055em;
+}
+
+.coverage-copy {
+  max-width: 620px;
+}
+
+.coverage-copy p {
+  color: rgba(255,255,255,.78);
+  font-size: .95rem;
+  line-height: 1.7;
+}
+
+.coverage-copy p + p {
+  margin-top: 20px;
+}
+
+.coverage-areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 30px;
+}
+
+.coverage-areas span {
+  padding: 9px 13px;
+  border: 1px solid rgba(255,255,255,.14);
+  color: rgba(255,255,255,.82);
+  font-size: .78rem;
+  letter-spacing: .04em;
+}
+
+@media (max-width: 900px) {
+  .coverage-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+@media (max-width: 620px) {
+  .coverage {
+    padding: 80px 0;
+  }
+
+  .coverage-grid {
+    gap: 28px;
+  }
+}
